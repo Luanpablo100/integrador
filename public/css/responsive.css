@@ -1,0 +1,43 @@
+@media (max-width:800px) {
+    main #principal {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    div#left {
+        width: 100%;
+        margin-left: 0%;
+        padding: 5%;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    nav {
+        position: fixed;
+        background-color: aqua;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        display: none;
+    }
+
+    div#extra {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .extra-sec {
+        flex-direction: row;
+    }
+
+    .main-icon {
+        height: 50px;
+        width: 50px;
+    }
+}
