@@ -11,6 +11,7 @@ app.get("/", (require, response) => {
 //Configurar arquivos estáticos (css, scripts, imagens)
 app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 
 //configuração do nunjucks
 const nunjucks = require("nunjucks")
@@ -26,29 +27,36 @@ app.get("/", (require, response) => {
 
 
 app.get("/cadastrar", (require, response) => {
-    db.serialize(function() {
-        db.run(`CREATE TABLE IF NOT EXISTS cursos(id int AUTO_INCREMENT PRIMARY KET, Nome varchar(60) NOT NULL)`)
-    })
+    db.run("CREATE TABLE IF NOT EXISTS cursos(ID  INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT NOT NULL);");
 
-    const query = `
-        INSERT INTO cursos(
-            Nome
-        ) VALUES (?);
-        `
-        
-     const values = [
-        "Curso de Javascript"  
-    ]
-
-    db.run (query, values)
-    
+    db.run(`INSERT INTO cursos(NAME) VALUES(?)`, ['Curso de Javascript'], function(err){
+        if (err) {
+            return console.log(err.message);
+        }
+        console.log(`A row has been inserted with rowid ${this.lastID}`);
+      });
     response.render('register.html')
 })
 
 app.get("/cursos", (require, response) => {
-    db.all(`SELECT * FROM cursos`)
-    
-    response.render('courses.html')
+    var crs = []
+    let sql = `SELECT * FROM cursos ORDER BY name`;
+
+    db.all(sql, [], (err, rows) => {
+        if (err) {
+            throw err;
+        }
+
+    rows.forEach((row) => {
+        crs.push(row)
+    });
+    response.json(crs)
+    });
+})
+
+app.delete("/cursos", (require, response) => {
+    db.run(`DELETE FROM cursos WHERE NAME="C";`)
+    response.send("Cursos deletados!")
 })
 
 app.get("/contato", (require, response) => {
