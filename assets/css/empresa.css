@@ -1,0 +1,94 @@
+
+header {
+    width: 100vw;
+    height: 70px;
+    background-color: seagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2 {
+    margin: 0;
+    margin-left: 10px;
+    color: white;
+}
+
+nav {
+    margin-right: 20px;
+    background-color: seagreen;
+    align-items: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: white;
+}
+
+button {
+    width: 110px;
+    align-self: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: seagreen;
+    color: seashell;
+    outline: none;
+    border: none;
+    height: 35px;
+    transition: .2s;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+}
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.texto1 {
+    margin-top: 20px;
+    text-align:justify;
+    padding: 40px;
+}
+
+.texto1 h1{
+    text-align: center;
+}
+
+.perfil-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align:justify;
+    padding: 40px;
+}
+
+.perfil-div .perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-div h1 {
+    text-align: center;
+}
+
+.perfil-div img {
+    border-radius: 50%;
+    width: 150px;
+}

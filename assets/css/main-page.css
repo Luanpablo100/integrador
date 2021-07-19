@@ -1,0 +1,93 @@
+header {
+    width: 100vw;
+    height: 70px;
+    background-color: seagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 { 
+    margin: 0;
+    margin-left: 10px;
+    color: white;
+}
+
+nav {
+    margin-right: 20px;
+    background-color: seagreen;
+    align-items: center;
+}
+
+main h2.title-main {
+    margin-left: 20px;
+}
+
+#categories {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category {
+    background-color: rgb(12, 134, 65);
+    padding: 0px 30px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.category:hover {
+    background-color: rgb(11, 158, 75);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#courses {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+}
+
+.course {
+    width: 300px;
+    height: 300px;
+    border: 3px solid rgba(0, 0, 0, 0.01);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.course:hover {
+    width: 320px;
+}
+
+.course img {
+    width: 70%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 10px;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+* {
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#hellotext {
+    font-size: 1.5rem;
+}

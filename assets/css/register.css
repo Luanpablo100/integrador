@@ -1,0 +1,173 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+}
+
+nav div img {
+    height: 30px;
+    width: 30px;
+}
+
+#logo-header {
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .3s;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+
+#logo-header:hover {
+    background-color: rgba(46, 45, 45, 0.452);
+    border: 2px solid white;
+}
+
+section div img {
+    width:70%;
+    height:90%;
+}
+
+section {
+    display: flex;
+    height: 90vh;
+}
+
+#form-div {
+    width: 40vw;
+}
+
+#form-div h1 {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    position: relative;
+    align-self: flex-start;
+    margin-left: 55px;
+    font-size: 26pt;
+    color: seagreen;
+    font-weight: bold;
+}
+
+form {
+    width: 300px;
+    height: 350px;
+    display: flex;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+#field-radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+form label {
+    justify-self: flex-start;
+}
+
+form input[type="text"], input[type="email"], input[type="password"], fieldset {
+    width: 100%;
+}
+
+
+input {
+    border-color: seagreen;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    transition: .2s;
+    outline: none;
+}
+
+input:focus {
+    border-bottom-width: 4px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+input[type='radio'] {
+    margin-left: 30px;
+}
+
+#image-div {
+    width: 60vw;
+}
+
+form button {
+    background-color: seagreen;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    font-size: 12pt;
+    transition: .3s;
+}
+
+form button:hover {
+    background-color: rgb(44, 167, 97);;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    padding: 8px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav div a {
+    text-decoration: none;
+    color: rgb(62, 189, 117);
+    transition: .3s;
+}
+
+nav div a:hover {
+    text-decoration: none;
+    color: rgb(44, 167, 97);
+}
+
+@media(max-width: 1000px) {
+    #image-div {
+        display: none;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 800px) {
+    #form-div h1 {
+        margin: 0;
+    }
+}

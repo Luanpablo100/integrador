@@ -1,0 +1,15 @@
+* {
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+.centralize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

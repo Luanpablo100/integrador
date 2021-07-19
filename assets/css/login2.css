@@ -1,0 +1,107 @@
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+form {
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+form img {
+    width: 50%;
+    height: 50%;
+}
+
+#inputs {
+    width: 100%;
+}
+
+input {
+    border-color: seagreen;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    transition: .2s;
+    outline: none;
+    width: 100%;
+}
+
+input:focus {
+    border-bottom-width: 4px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+#other-logins {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.other-login {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.other-login:hover {
+    background-color: rgba(3, 3, 3, 0.185);
+}
+
+.other-login img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.input-field {
+    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    width: 110px;
+    align-self: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: seagreen;
+    color: seashell;
+    outline: none;
+    border: none;
+    height: 35px;
+    transition: .2s;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(51, 185, 109);
+}
+
+form h4 {
+    margin: 10px;
+}
+
+#registrarse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#registrarse-btn {
+    background-color: transparent;
+    color: rgb(51, 185, 109);
+    border: 2px solid rgb(51, 185, 109);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
